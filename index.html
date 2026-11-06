@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Smart Agriculture Drone Spraying | AgroFly</title><meta name="description" content="AgroFly – precision agricultural drone spraying services.">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link id="bsCss" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>/* apply saved theme + direction before paint */(function(){var d=document.documentElement,t=localStorage.getItem('agro_theme')||'light',r=localStorage.getItem('agro_dir')||'ltr';d.dataset.bsTheme=t;d.dir=r;if(r==='rtl')document.getElementById('bsCss').href=document.getElementById('bsCss').href.replace('bootstrap.min.css','bootstrap.rtl.min.css')})()</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>tailwind.config={corePlugins:{preflight:false,visibility:false},blocklist:['collapse']}</script>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+  </head>
+  <body data-root="" data-page="home1" class="">
+    <header class="site-header" id="hdr">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand brand" href="index.html">
+          <span class="logo-box"><img src="assets/img/logo.svg" alt="AgroFly" class="brand-drone-icon"></span>
+          <span>AGRO<b>FLY</b></span>
+          </a>
+                              <button type="button" class="navbar-toggler ms-auto ms-lg-0 order-lg-last" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="mnav">
+            <ul class="navbar-nav mx-lg-auto align-items-lg-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="index.html">Home – Smart Agriculture</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="home-2.html">Home – Precision Spraying</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard/index.html">Dashboard</a>
+              </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-2 flex-wrap nav-actions">
+              <div class="nav-toggles-row">
+                <button class="icon-btn js-theme" type="button" aria-label="Toggle Theme Mode" title="Toggle Light / Dark Mode">
+                <i class="bi bi-moon-stars"></i>
+              </button>
+              <button class="icon-btn js-rtl" type="button" aria-label="Toggle RTL Mode" title="Toggle Direction (LTR / RTL)">
+                <i class="bi bi-arrow-left-right"></i>
+              </button>
+              </div>
+              <span id="authSlot"><a class="btn btn-outline-agro btn-sm" href="sign-in.html">Sign In</a></span>
+              <a class="btn btn-agro btn-sm" href="dashboard/book-spraying.html">Get Started<span class="d-none d-xl-inline">&nbsp;&ndash; Book a Drone</span></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home1">
+        <img class="hero-bg" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=70" alt="Drone flying over green farmland" fetchpriority="high"><video class="hero-vid " autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=70"><source src="assets/video/home-hero.mp4" type="video/mp4"></video>
+        <div class="hero-ov">
+        </div>
+        <div class="blobs">
+          <i></i><i></i>
+        </div>
+        <div class="container hero-in">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <span class="label anim a1">SMART AGRICULTURE TECHNOLOGY</span>
+              <h1 class="anim a2">
+                Transforming Agriculture with Precision Drone Technology
+              </h1>
+              <p class="anim a3">
+                Smarter spraying, healthier crops, and higher productivity. Experience the future of agriculture with advanced drone spraying solutions.
+              </p>
+              <div class="d-flex flex-wrap gap-3 anim a4">
+                <a class="btn btn-lime btn-lg pulse" href="services.html">Explore Our Services</a><a class="btn btn-light-o btn-lg" href="dashboard/book-spraying.html">Book a Drone Service</a>
+              </div>
+              <div class="row g-3 mt-4 hero-stats anim a4">
+                <div class="col-4">
+                  <b><span class="count" data-to="5000">0</span>+</b><small>Acres</small>
+                </div>
+                <div class="col-4">
+                  <b><span class="count" data-to="1200">0</span>+</b><small>Farmers</small>
+                </div>
+                <div class="col-4">
+                  <b><span class="count" data-to="98">0</span>%</b><small>Accuracy</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="glass float f1">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <b>RTK GPS</b><small>±2 cm precision</small>
+                </div>
+              </div>
+              <div class="glass float f2">
+                <i class="bi bi-droplet-fill"></i>
+                <div>
+                  <b>16 L tank</b><small>Variable-rate spray</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 1: Full-Width Agricultural Technology Introduction -->
+      <section class="sec" id="agri-tech-intro">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 reveal">
+              <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-3 d-inline-block">
+                <i class="bi bi-shield-check me-1"></i> THE SMART FARMING REVOLUTION
+              </span>
+              <h2 class="display-6 fw-bold mb-3 text-body">
+                Pioneering Autonomous Precision Agriculture Across Indian Farmlands
+              </h2>
+              <p class="lead text-muted mb-4">
+                AGROFLY delivers military-grade aerial crop protection engineered for Indian soil conditions. We replace slow, hazardous manual knapsack spraying with centimeter-accurate autonomous drone sorties.
+              </p>
+              <p class="text-muted mb-4">
+                Operating a fleet of DGCA type-certified agricultural hexacopters with licensed pilots, we provide turnkey spraying services across Tamil Nadu, Karnataka, Andhra Pradesh, and Maharashtra. Our ultra-low-volume rotary atomizers use 90% less water, protect farmers from toxic inhalation, and eliminate tractor soil compaction entirely.
+              </p>
+              <div class="d-flex flex-wrap gap-4 pt-3 border-top mb-4">
+                <div>
+                  <div class="fs-2 fw-bold text-success font-monospace">10–12 Min</div>
+                  <div class="small text-muted fw-semibold">Per Acre Sortie</div>
+                </div>
+                <div>
+                  <div class="fs-2 fw-bold text-success font-monospace">90%</div>
+                  <div class="small text-muted fw-semibold">Water Conserved</div>
+                </div>
+                <div>
+                  <div class="fs-2 fw-bold text-success font-monospace">0 kg</div>
+                  <div class="small text-muted fw-semibold">Soil Compaction</div>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="services.html" class="btn btn-agro btn-lg">Explore All Services</a>
+                <a href="dashboard/book-spraying.html" class="btn btn-outline-agro btn-lg">Book a Spraying Mission</a>
+              </div>
+            </div>
+            <div class="col-lg-6 reveal">
+              <div class="position-relative">
+                <img class="rounded-4 w-100 shadow-lg" loading="lazy" src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=1200&q=75" alt="AGROFLY industrial drone hovering over vast green agricultural plantation" style="aspect-ratio: 4/3; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 m-3 p-3 bg-dark bg-opacity-75 text-white rounded-3 backdrop-blur small" style="backdrop-filter: blur(8px); max-width: 400px;">
+                  <strong class="d-block mb-1"><i class="bi bi-broadcast me-1.5 text-lime"></i> Centimeter RTK Guidance &amp; Live Radar</strong>
+                  Dual-frequency GNSS locks flight lines down to ±1.5 cm accuracy, ensuring 100% swath coverage without skips or chemical burns.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Traditional Methods vs. AGROFLY Precision Drones (Visual Comparison Table - NO BOX CARDS) -->
+      <section class="sec alt" id="advantages">
+        <div class="container">
+          <div class="sec-h text-center reveal mb-5">
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-2">SCIENTIFIC COMPARISON</span>
+            <h2 class="fw-bold">
+              Why Drone Spraying Outperforms Manual &amp; Tractor Spraying
+            </h2>
+            <p class="text-muted mx-auto" style="max-width: 680px;">
+              A side-by-side scientific breakdown of resource conservation, field velocity, and crop canopy protection.
+            </p>
+          </div>
+          
+          <div class="comparison-matrix-wrap reveal">
+            <table class="comparison-matrix-table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 25%;">Operational Parameter</th>
+                  <th scope="col" style="width: 37%;">Traditional Knapsack / Tractor</th>
+                  <th scope="col" style="width: 38%;" class="text-success"><i class="bi bi-shield-check me-1"></i> AGROFLY Precision Drone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Water Required per Acre</strong></td>
+                  <td><span class="pill-red"><i class="bi bi-x-circle"></i> 150 – 200 Litres</span><br><small class="text-muted">Excessive groundwater waste and ground puddle runoff</small></td>
+                  <td><span class="pill-green"><i class="bi bi-check-circle"></i> 8 – 10 Litres</span><br><small class="text-muted">90% water conservation with ultra-low-volume micron mist</small></td>
+                </tr>
+                <tr>
+                  <td><strong>Spraying Time per Acre</strong></td>
+                  <td><span class="pill-red"><i class="bi bi-x-circle"></i> 3 to 4 Hours</span><br><small class="text-muted">Extreme physical fatigue and delayed outbreak response</small></td>
+                  <td><span class="pill-green"><i class="bi bi-check-circle"></i> 10 to 12 Minutes</span><br><small class="text-muted">10× faster field coverage; up to 35 acres daily per flight crew</small></td>
+                </tr>
+                <tr>
+                  <td><strong>Soil &amp; Crop Trampling</strong></td>
+                  <td><span class="pill-red"><i class="bi bi-x-circle"></i> 3%–5% Crop Loss</span><br><small class="text-muted">Heavy tractor tires compact soil roots and crush growing tillers</small></td>
+                  <td><span class="pill-green"><i class="bi bi-check-circle"></i> 0% Zero Trampling</span><br><small class="text-muted">100% aerial hover; works over flooded paddy and muddy soil</small></td>
+                </tr>
+                <tr>
+                  <td><strong>Farmer &amp; Worker Safety</strong></td>
+                  <td><span class="pill-red"><i class="bi bi-x-circle"></i> Severe Hazard</span><br><small class="text-muted">Direct skin contact, toxic inhalation, and heat exhaustion</small></td>
+                  <td><span class="pill-green"><i class="bi bi-check-circle"></i> 100% Safe Standoff</span><br><small class="text-muted">Autonomous flight operated remotely by DGCA licensed pilots</small></td>
+                </tr>
+                <tr>
+                  <td><strong>Foliage Canopy Coverage</strong></td>
+                  <td><span class="pill-red"><i class="bi bi-x-circle"></i> Top Leaf Only</span><br><small class="text-muted">Chemical runs off top leaves; pests on undersides survive</small></td>
+                  <td><span class="pill-green"><i class="bi bi-check-circle"></i> Complete 360° Wrap</span><br><small class="text-muted">Vortex rotor downwash flips leaves to kill hidden pests</small></td>
+                </tr>
+                <tr>
+                  <td><strong>Unforeseen Rain Guarantee</strong></td>
+                  <td><span class="pill-red"><i class="bi bi-x-circle"></i> Zero Protection</span><br><small class="text-muted">Total financial loss if rain washes away chemical</small></td>
+                  <td><span class="pill-green"><i class="bi bi-check-circle"></i> Free 4-Hr Re-Spray</span><br><small class="text-muted">100% free re-spray sortie if rain washes off within 4 hours</small></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Alternating Feature Showcase 1 (Image-Left, Text-Right) -->
+      <section class="sec" id="canopy-penetration">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 reveal">
+              <div class="position-relative">
+                <img class="rounded-4 w-100 shadow" loading="lazy" src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=1200&q=75" alt="Agricultural drone vortex canopy mist penetration" style="aspect-ratio: 4/3; object-fit: cover;">
+                <div class="position-absolute top-0 start-0 m-3 p-2 bg-success text-white rounded-pill px-3 py-1.5 small fw-bold shadow">
+                  <i class="bi bi-wind me-1"></i> ROTOR DOWNWASH VORTEX
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 reveal">
+              <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-2">TARGETED DEFENSE</span>
+              <h2 class="display-6 fw-bold mb-3 text-body">
+                Lethal Pest Knockdown via Aerodynamic Canopy Inversion
+              </h2>
+              <p class="lead text-muted mb-3">
+                Destructive pests like aphids, thrips, whiteflies, and stem borers naturally hide on the undersides of dense crop foliage where gravity-fed manual sprayers cannot reach.
+              </p>
+              <p class="text-muted mb-4">
+                AGROFLY hexacopters solve this through aerodynamic engineering. Our custom carbon composite rotors produce a powerful turbulent downward air vortex that gently inverts the crop leaves as the drone passes overhead. High-speed centrifugal misting discs discharge electrostatically charged 80–120 micron droplets, ensuring thorough coverage on both sides of every leaf.
+              </p>
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="editorial-benefit-icon"><i class="bi bi-bug-fill"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-body">98% Pest Mortality on Leaf Undersides</h6>
+                    <small class="text-muted">Direct contact kills hidden sucking pests without requiring dangerous chemical over-concentration.</small>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start gap-3">
+                  <div class="editorial-benefit-icon"><i class="bi bi-radar"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-body">Active Millimeter Obstacle &amp; Contour Radars</h6>
+                    <small class="text-muted">Maintains a consistent 2-meter standoff distance above undulating crop canopies automatically.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Drone Spraying Process with Numbered Steps (Clean Connected Flow - NO CARDS) -->
+      <section class="sec alt" id="how-it-works">
+        <div class="container">
+          <div class="sec-h text-center reveal mb-5">
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-2">FLIGHT SOP</span>
+            <h2 class="fw-bold">
+              4-Phase Precision Field Execution Protocol
+            </h2>
+            <p class="text-muted mx-auto" style="max-width: 680px;">
+              From farm boundary GPS mapping to verifiable sortie completion in under 24 hours.
+            </p>
+          </div>
+          
+          <div class="row g-4 reveal">
+            <div class="col-md-6 col-lg-3">
+              <div class="editorial-num-item h-100 flex-column justify-content-between p-3 bg-card border rounded-4">
+                <div class="d-flex justify-content-between align-items-center w-100 mb-2">
+                  <span class="editorial-num">01</span>
+                  <span class="badge bg-light text-dark border">SURVEY</span>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-2 text-body">GIS Boundary Lock</h5>
+                  <p class="text-muted small mb-0">
+                    Pilot plots boundary polygons with dual-band RTK GNSS, programming 5-meter safety exclusion buffers around canals and power lines.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="editorial-num-item h-100 flex-column justify-content-between p-3 bg-card border rounded-4">
+                <div class="d-flex justify-content-between align-items-center w-100 mb-2">
+                  <span class="editorial-num">02</span>
+                  <span class="badge bg-light text-dark border">MIXING</span>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-2 text-body">Triple-Filtered Premix</h5>
+                  <p class="text-muted small mb-0">
+                    Carrier water is filtered through dual inline strainers, pre-blending CIBRC approved formulation to prevent nozzle blockage in flight.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="editorial-num-item h-100 flex-column justify-content-between p-3 bg-card border rounded-4">
+                <div class="d-flex justify-content-between align-items-center w-100 mb-2">
+                  <span class="editorial-num">03</span>
+                  <span class="badge bg-light text-dark border">FLIGHT</span>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-2 text-body">Radar Autonomous Sortie</h5>
+                  <p class="text-muted small mb-0">
+                    Hexacopter executes automated flight paths at 5 m/s, delivering calibrated micron mist with downward vortex agitation in 10 mins/acre.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="editorial-num-item h-100 flex-column justify-content-between p-3 bg-card border rounded-4">
+                <div class="d-flex justify-content-between align-items-center w-100 mb-2">
+                  <span class="editorial-num">04</span>
+                  <span class="badge bg-light text-dark border">AUDIT</span>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-2 text-body">Verifiable KML Dossier</h5>
+                  <p class="text-muted small mb-0">
+                    Farmer receives digital spray completion certificate with GPS boundaries, pilot ID, and dosage telemetry for PMFBY subsidy audits.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Alternating Feature Showcase 2 (Text-Left, Image-Right) -->
+      <section class="sec" id="foliar-nutrition">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 reveal">
+              <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-2">NANO-AGRONOMY</span>
+              <h2 class="display-6 fw-bold mb-3 text-body">
+                Direct Stomatal Nutrition Absorption with Zero Soil Compaction
+              </h2>
+              <p class="lead text-muted mb-3">
+                Traditional broadcasting of chemical fertilizers wastes over 60% of nutrients through soil evaporation and groundwater leaching.
+              </p>
+              <p class="text-muted mb-4">
+                AGROFLY's precision foliar dispersion sprays IFFCO Nano-Urea, liquid DAP, and micronutrient bio-stimulants directly onto active leaf stomata. The microscopic mist particles enter plant vascular tissue within minutes, delivering up to 95% nutrient assimilation while cutting total fertilizer costs by 25%–30%.
+              </p>
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="editorial-benefit-icon"><i class="bi bi-droplet-half"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-body">95% Direct Stomatal Uptake</h6>
+                    <small class="text-muted">Nutrients absorbed through foliage before wind or rain can wash them away.</small>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start gap-3">
+                  <div class="editorial-benefit-icon"><i class="bi bi-flower1"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-body">Flooded Paddy &amp; Wet Soil Access</h6>
+                    <small class="text-muted">Operates seamlessly over waterlogged fields when tractors and human backpack sprayers cannot enter.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 reveal">
+              <div class="position-relative">
+                <img class="rounded-4 w-100 shadow" loading="lazy" src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1200&q=75" alt="Farmer and agronomist reviewing drone foliar spray results in field" style="aspect-ratio: 4/3; object-fit: cover;">
+                <div class="position-absolute bottom-0 end-0 m-3 p-2 bg-success text-white rounded-pill px-3 py-1.5 small fw-bold shadow">
+                  <i class="bi bi-check-circle-fill me-1"></i> IFFCO NANO-UREA COMPLIANT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Full-Width Crop Coverage Matrix (Showcase of 5 Major Crop Architectures) -->
+      <section class="sec alt" id="crop-architecture">
+        <div class="container">
+          <div class="sec-h text-center reveal mb-5">
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-2">CANOPY ADAPTABILITY</span>
+            <h2 class="fw-bold">
+              Tailored Flight Profiles for Every Indian Crop Architecture
+            </h2>
+            <p class="text-muted mx-auto" style="max-width: 680px;">
+              Calibrated carrier volumes, rotor downwash velocity, and flight altitudes engineered for specific canopy geometries.
+            </p>
+          </div>
+
+          <div class="row g-4 reveal">
+            <div class="col-md-6 col-lg-4">
+              <div class="crop-ribbon-item d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-success-subtle text-success border border-success-subtle">CEREAL CROP</span>
+                    <span class="text-muted small">8 – 10 L / Acre</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 text-body">Paddy &amp; Rice</h5>
+                  <p class="small text-muted mb-3">
+                    Zero plant trampling during tillering in flooded fields. Strong downwash penetrates dense standing water to coat lower tillers against sheath blight, blast, and BPH.
+                  </p>
+                </div>
+                <div class="pt-2 border-top small text-success fw-semibold">
+                  <i class="bi bi-check-circle-fill me-1"></i> Tillering, Panicle Initiation, Pre-Harvest
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="crop-ribbon-item d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-success-subtle text-success border border-success-subtle">CASH FIBER</span>
+                    <span class="text-muted small">10 – 12 L / Acre</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 text-body">Hybrid Cotton</h5>
+                  <p class="small text-muted mb-3">
+                    Downward prop-wash flips wide cotton leaves upside down, delivering lethal droplet deposition on leaf undersides where pink bollworms and whiteflies hide.
+                  </p>
+                </div>
+                <div class="pt-2 border-top small text-success fw-semibold">
+                  <i class="bi bi-check-circle-fill me-1"></i> Square Formation, Peak Bloom, Boll Fill
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="crop-ribbon-item d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-success-subtle text-success border border-success-subtle">TALL CANOPY</span>
+                    <span class="text-muted small">12 – 15 L / Acre</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 text-body">Sugarcane (Up to 14ft)</h5>
+                  <p class="small text-muted mb-3">
+                    Flies effortlessly 2 meters above mature 14-foot dense sugarcane impenetrable by manual laborers, eliminating dangerous wild animal exposure.
+                  </p>
+                </div>
+                <div class="pt-2 border-top small text-success fw-semibold">
+                  <i class="bi bi-check-circle-fill me-1"></i> Formative, Grand Growth &amp; Maturity
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+              <div class="crop-ribbon-item d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-success-subtle text-success border border-success-subtle">COARSE CEREAL &amp; PULSES</span>
+                    <span class="text-muted small">8 – 10 L / Acre</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 text-body">Maize &amp; Groundnut</h5>
+                  <p class="small text-muted mb-3">
+                    Precision whorl application concentrates active bio-pesticides directly into leaf funnels to destroy aggressive early-instar fall armyworm larvae.
+                  </p>
+                </div>
+                <div class="pt-2 border-top small text-success fw-semibold">
+                  <i class="bi bi-check-circle-fill me-1"></i> Knee-High Whorl Stage &amp; Pod Filling
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6">
+              <div class="crop-ribbon-item d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-success-subtle text-success border border-success-subtle">HORTICULTURE &amp; ORCHARDS</span>
+                    <span class="text-muted small">12 – 20 L / Acre</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 text-body">Vegetables &amp; Commercial Orchards</h5>
+                  <p class="small text-muted mb-3">
+                    Full three-dimensional canopy penetration for chilli, tomato, mango, citrus, and banana estates. Dual centrifugal mist coats high fruit clusters uniformly.
+                  </p>
+                </div>
+                <div class="pt-2 border-top small text-success fw-semibold">
+                  <i class="bi bi-check-circle-fill me-1"></i> Pre-Bloom Flush, Post-Fruit Set &amp; Maturity
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<section class="sec stat-band">
+        <div class="container">
+          <div class="row g-3 stats ">
+            <div class="col-6 col-lg-3">
+              <div class="stat reveal">
+                <b><span class="count" data-to="5000">0</span>+</b><small>Acres sprayed</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat reveal">
+                <b><span class="count" data-to="1200">0</span>+</b><small>Happy farmers</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat reveal">
+                <b><span class="count" data-to="30">0</span>%</b><small>Chemical saved</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat reveal">
+                <b><span class="count" data-to="98">0</span>%</b><small>Coverage accuracy</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec ">
+        <div class="container">
+          <div class="sec-h reveal">
+            <h2>
+              Featured Service Packages
+            </h2>
+            <p>
+              Illustrative pricing — final rates depend on crop, acreage, chemical and location.
+            </p>
+          </div>
+          <div class="row g-4" data-r="pkgs" data-n="3" >
+          </div>
+        </div>
+      </section>
+      <section class="sec alt">
+        <div class="container">
+          <div class="sec-h reveal">
+            <h2>
+              Before &amp; After Gallery
+            </h2>
+            <p>
+              Visible differences in crop health after spray programs.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="ba reveal">
+                <div class="ba-i">
+                  <img loading="lazy" class="before" src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=700&q=70" alt="Before drone spraying – field 1"><span>Before</span>
+                </div>
+                <div class="ba-i">
+                  <img loading="lazy" src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=700&q=70" alt="After drone spraying – healthy crop 1"><span class="a">After</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="ba reveal">
+                <div class="ba-i">
+                  <img loading="lazy" class="before" src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=700&q=70" alt="Before drone spraying – field 2"><span>Before</span>
+                </div>
+                <div class="ba-i">
+                  <img loading="lazy" src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=700&q=70" alt="After drone spraying – healthy crop 2"><span class="a">After</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="ba reveal">
+                <div class="ba-i">
+                  <img loading="lazy" class="before" src="https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?auto=format&fit=crop&w=700&q=70" alt="Before drone spraying – field 3"><span>Before</span>
+                </div>
+                <div class="ba-i">
+                  <img loading="lazy" src="https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?auto=format&fit=crop&w=700&q=70" alt="After drone spraying – healthy crop 3"><span class="a">After</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec ">
+        <div class="container">
+          <div class="sec-h reveal">
+            <h2>
+              What Farmers Say
+            </h2>
+            <p>
+              Real feedback from growers across Tamil Nadu.
+            </p>
+          </div>
+          <div class="row g-4" data-r="tests" data-n="3" >
+          </div>
+        </div>
+      </section>
+      <section class="sec alt">
+        <div class="container">
+          <div class="sec-h reveal">
+            <h2>
+              Latest Agricultural Insights
+            </h2>
+            <p>
+              Guides from our agronomy desk.
+            </p>
+          </div>
+          <div class="row g-4" data-r="blog" data-n="3" >
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container text-center reveal">
+          <h2>
+            Ready to spray smarter?
+          </h2>
+          <p>
+            Book a drone in under two minutes.
+          </p>
+          <a class="btn btn-lime btn-lg" href="dashboard/book-spraying.html">Book a Drone Service</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a class="brand mb-3 d-inline-flex" href="index.html">
+            <span class="logo-box"><img src="assets/img/logo.svg" alt="AgroFly" class="brand-drone-icon"></span>
+            <span>AGRO<b>FLY</b></span>
+            </a>
+            <p>
+              AgroFly delivers precision drone spraying for paddy, cotton, sugarcane, maize, vegetables and more — safer for farmers, kinder to crops.
+            </p>
+            <div class="social">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>
+              Quick Links
+            </h6>
+            <ul>
+              <li>
+                <a href="about.html">About Us</a>
+              </li>
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="dashboard/index.html">Farmer Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>
+              Our Services
+            </h6>
+            <ul>
+              <li>
+                <a href="service-details.html?s=0">Paddy Drone Spraying</a>
+              </li>
+              <li>
+                <a href="service-details.html?s=1">Cotton Crop Spraying</a>
+              </li>
+              <li>
+                <a href="service-details.html?s=2">Sugarcane Spraying</a>
+              </li>
+              <li>
+                <a href="service-details.html?s=6">Pesticide Application</a>
+              </li>
+              <li>
+                <a href="service-details.html?s=7">Fertilizer Spraying</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6>
+              Contact &amp; Newsletter
+            </h6>
+            <p class="mb-1">
+              <i class="bi bi-geo-alt"></i> 24 Agri Park Road, Coimbatore, Tamil Nadu
+            </p>
+            <p class="mb-1">
+              <i class="bi bi-telephone"></i> +91 98765 43210 &nbsp; <i class="bi bi-envelope"></i> hello@agrofly.example
+            </p>
+            <form class="news mt-3" novalidate data-form="news">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email" aria-label="Email" data-v="required email">
+                <button class="btn btn-lime">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="foot-b">
+          <span>© 2026 AgroFly. Demo template.</span>
+          <span><a href="#">Privacy Policy</a> · <a href="#">Terms and Conditions</a></span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/rtl.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/authentication.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

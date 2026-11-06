@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About Us | AgroFly</title><meta name="description" content="Learn about AgroFly – our story, mission, team and technology.">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link id="bsCss" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>/* apply saved theme + direction before paint */(function(){var d=document.documentElement,t=localStorage.getItem('agro_theme')||'light',r=localStorage.getItem('agro_dir')||'ltr';d.dataset.bsTheme=t;d.dir=r;if(r==='rtl')document.getElementById('bsCss').href=document.getElementById('bsCss').href.replace('bootstrap.min.css','bootstrap.rtl.min.css')})()</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>tailwind.config={corePlugins:{preflight:false,visibility:false},blocklist:['collapse']}</script>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+  </head>
+  <body data-root="" data-page="about" class="">
+    <header class="site-header" id="hdr">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand brand" href="index.html">
+          <span class="logo-box"><img src="assets/img/logo.svg" alt="AgroFly" class="brand-drone-icon"></span>
+          <span>AGRO<b>FLY</b></span>
+          </a>
+                              <button type="button" class="navbar-toggler ms-auto ms-lg-0 order-lg-last" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="mnav">
+            <ul class="navbar-nav mx-lg-auto align-items-lg-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="index.html">Home – Smart Agriculture</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="home-2.html">Home – Precision Spraying</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard/index.html">Dashboard</a>
+              </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-2 flex-wrap nav-actions">
+              <div class="nav-toggles-row">
+                <button class="icon-btn js-theme" type="button" aria-label="Toggle Theme Mode" title="Toggle Light / Dark Mode">
+                <i class="bi bi-moon-stars"></i>
+              </button>
+              <button class="icon-btn js-rtl" type="button" aria-label="Toggle RTL Mode" title="Toggle Direction (LTR / RTL)">
+                <i class="bi bi-arrow-left-right"></i>
+              </button>
+              </div>
+              <span id="authSlot"><a class="btn btn-outline-agro btn-sm" href="sign-in.html">Sign In</a></span>
+              <a class="btn btn-agro btn-sm" href="dashboard/book-spraying.html">Get Started<span class="d-none d-xl-inline">&nbsp;&ndash; Book a Drone</span></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <img class="hero-bg" src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&w=1600&q=70" alt="About AgroFly – agricultural drone imagery" fetchpriority="high">
+        <div class="hero-ov">
+        </div>
+        <div class="container text-center hero-in">
+          <h1>
+            About AgroFly
+          </h1>
+          <p>
+            Bringing precision drone technology to Indian farms.
+          </p>
+        </div>
+      </section>
+      <!-- Editorial Section 1: Who We Are (Image & Text Split - NO CARDS) -->
+      <section class="sec" id="who-we-are">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 reveal">
+              <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-3 d-inline-block">
+                <i class="bi bi-shield-check me-1"></i> PIONEERING AGRI-TECH AVIATION
+              </span>
+              <h2 class="display-6 fw-bold mb-3 text-body">
+                Who We Are: Transforming Indian Crop Protection into a Digital Precision Science
+              </h2>
+              <p class="lead text-muted mb-4">
+                Born in the fertile agricultural belt of Tamil Nadu, AGROFLY was created with a clear purpose: to eliminate the severe health hazards, extreme labor shortages, and wasteful runoff of manual knapsack spraying across Indian farmlands.
+              </p>
+              <p class="text-muted mb-4">
+                By uniting aerospace flight automation with certified agronomic expertise, we provide high-throughput aerial spraying services for smallholder family plots, commercial seed orchards, sugarcane cooperatives, and Farmer Producer Organizations (FPOs). Our turnkey drone sorties ensure that every single plant receives scientifically calibrated droplet coverage—without sending human workers into toxic chemical mist or compacting delicate soil root zones with heavy tractors.
+              </p>
+              <div class="d-flex flex-wrap gap-4 pt-3 border-top">
+                <div>
+                  <div class="fs-2 fw-bold text-success font-monospace">45,000+</div>
+                  <div class="small text-muted fw-semibold">Acres Protected</div>
+                </div>
+                <div>
+                  <div class="fs-2 fw-bold text-success font-monospace">90%</div>
+                  <div class="small text-muted fw-semibold">Water Conserved</div>
+                </div>
+                <div>
+                  <div class="fs-2 fw-bold text-success font-monospace">0%</div>
+                  <div class="small text-muted fw-semibold">Worker Chemical Contact</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 reveal">
+              <div class="position-relative">
+                <img class="rounded-4 w-100 shadow-lg" loading="lazy" src="assets/img/precision-science.jpg" alt="AGROFLY industrial drone hovering over lush green farmland" style="aspect-ratio: 4/3; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 m-3 p-3 bg-dark bg-opacity-75 text-white rounded-3 backdrop-blur small" style="backdrop-filter: blur(8px); max-width: 380px;">
+                  <strong class="d-block mb-1"><i class="bi bi-broadcast me-1.5 text-lime"></i> Centimeter RTK Flight Guidance</strong>
+                  Dual-frequency GNSS receivers lock drone trajectories down to ±1.5 cm accuracy over undulating agricultural canopies.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editorial Section 2: Full-Width Highlighted Statement & Philosophy -->
+      <section class="sec py-0">
+        <div class="container">
+          <div class="editorial-quote-banner text-center reveal shadow-sm">
+            <i class="bi bi-quote fs-1 text-lime d-block mb-2 opacity-75"></i>
+            <p class="editorial-quote-text">
+              "Our mission is grounded in a sacred promise to rural India: No farmer should ever suffer chemical poisoning to protect their harvest, and no acre should be lost to pest delays when the sky holds the answer."
+            </p>
+            <div class="mt-3 text-lime fw-semibold small text-uppercase letter-spacing-1">
+              — AGROFLY Agronomy &amp; Flight Engineering Council
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editorial Section 3: Our Mission & Our Vision (Editorial Split Layout - NO CARDS) -->
+      <section class="sec alt" id="mission-vision">
+        <div class="container">
+          <div class="row g-5 align-items-stretch reveal">
+            <!-- Mission Column -->
+            <div class="col-lg-6 d-flex flex-column justify-content-between pe-lg-5">
+              <div>
+                <div class="d-inline-flex align-items-center justify-content-center bg-success text-white rounded-3 p-3 mb-3 fs-4">
+                  <i class="bi bi-flag-fill"></i>
+                </div>
+                <h3 class="display-6 fw-bold mb-3 text-body">Our Mission</h3>
+                <p class="lead text-muted mb-4">
+                  Democratizing advanced aerial agricultural technology for every Indian grower, irrespective of landholding size or location.
+                </p>
+                <p class="text-muted mb-4">
+                  We are dismantling the financial and logistical barriers of high-tech farming. Instead of burdening farmers with ₹8–10 Lakh equipment investments, AGROFLY delivers on-demand, pay-per-acre flight services backed by DGCA-certified commercial pilots. We guarantee 24-hour dispatch during critical pest outbreaks, 90% water conservation through ultra-low-volume misting, and total transparency with GPS flight logs.
+                </p>
+              </div>
+              <div class="p-3 bg-card border rounded-3 border-start-4 border-start-success">
+                <strong class="d-block text-success mb-1"><i class="bi bi-check-circle-fill me-1.5"></i> Farmer Commitment</strong>
+                <span class="small text-muted">Zero equipment capital cost, free rain re-spray guarantee, and subsidized cluster spraying for smallholder farmer groups.</span>
+              </div>
+            </div>
+
+            <!-- Vision Column -->
+            <div class="col-lg-6 d-flex flex-column justify-content-between ps-lg-5 border-start-lg">
+              <div>
+                <div class="d-inline-flex align-items-center justify-content-center bg-success text-white rounded-3 p-3 mb-3 fs-4">
+                  <i class="bi bi-eye-fill"></i>
+                </div>
+                <h3 class="display-6 fw-bold mb-3 text-body">Our Vision</h3>
+                <p class="lead text-muted mb-4">
+                  Building India's most dependable, climate-resilient precision agricultural drone network covering 1,000,000 acres by 2030.
+                </p>
+                <p class="text-muted mb-4">
+                  We envision a resilient agricultural landscape where drone swarms, multi-spectral NDVI satellite maps, and AI pest diagnostics work seamlessly together. By detecting fungal blast, armyworm, and nutrient stress up to 14 days before visible foliage damage occurs, AGROFLY empowers farmers to act proactively, drastically cut chemical usage, and protect groundwater quality for generations.
+                </p>
+              </div>
+              <div class="p-3 bg-card border rounded-3 border-start-4 border-start-success">
+                <strong class="d-block text-success mb-1"><i class="bi bi-globe-americas me-1.5"></i> Sustainability Target</strong>
+                <span class="small text-muted">Preventing 100 million liters of agricultural chemical runoff and conserving over 500 million liters of fresh water across Indian farmlands.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editorial Section 4: Our Technology (Numbered Deep-Dive with Image - NO CARDS) -->
+      <section class="sec" id="our-technology">
+        <div class="container">
+          <div class="sec-h text-center reveal mb-5">
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-2">PRECISION AVIATION</span>
+            <h2 class="fw-bold">
+              Our Technology: Built for Rugged Indian Field Conditions
+            </h2>
+            <p class="text-muted mx-auto" style="max-width: 680px;">
+              Engineered with aerospace-grade carbon fiber and smart telemetry, our drone fleet delivers scientific uniformity impossible with manual knapsacks.
+            </p>
+          </div>
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5 reveal">
+              <div class="position-relative">
+                <img class="rounded-4 w-100 shadow" loading="lazy" src="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=1200&q=75" alt="Agricultural drone high-pressure atomization spray nozzle system" style="aspect-ratio: 4/5; object-fit: cover;">
+                <div class="position-absolute top-0 end-0 m-3 p-2 bg-success text-white rounded-pill px-3 py-1.5 small fw-bold shadow">
+                  <i class="bi bi-cpu-fill me-1"></i> AI FLIGHT COMPUTATION
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 reveal">
+              <!-- Numbered 1 -->
+              <div class="editorial-num-item">
+                <div class="editorial-num">01</div>
+                <div>
+                  <h5 class="fw-bold mb-1 text-body">Centimeter RTK Satellite Guidance</h5>
+                  <p class="text-muted small mb-0">
+                    Dual-frequency RTK GNSS coupled with ground base stations locks drone flight lines down to ±1.5 cm accuracy. This completely eliminates missed crop strips and prevents double-spray overdosing.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Numbered 2 -->
+              <div class="editorial-num-item">
+                <div class="editorial-num">02</div>
+                <div>
+                  <h5 class="fw-bold mb-1 text-body">Rotary Atomizing Micron Mist (80–120 µm)</h5>
+                  <p class="text-muted small mb-0">
+                    High-speed centrifugal atomizer discs break liquid into billions of uniform micro-droplets. These adhere electrostatically to the foliage, saving up to 90% water while preventing ground puddle runoff.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Numbered 3 -->
+              <div class="editorial-num-item">
+                <div class="editorial-num">03</div>
+                <div>
+                  <h5 class="fw-bold mb-1 text-body">Aerodynamic Vortex Canopy Downwash</h5>
+                  <p class="text-muted small mb-0">
+                    Specially shaped carbon composite propellers generate high-velocity downward air wash. This gently rolls the crop leaves upside down, coating the underside where destructive aphids, thrips, and borers shelter.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Numbered 4 -->
+              <div class="editorial-num-item">
+                <div class="editorial-num">04</div>
+                <div>
+                  <h5 class="fw-bold mb-1 text-body">Millimeter-Wave Radar Terrain-Following</h5>
+                  <p class="text-muted small mb-0">
+                    Real-time front, rear, and downward radar sensors measure canopy distance 100 times per second, maintaining an exact 1.8m to 2.2m standoff even over steep hill terraces and undulating slopes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editorial Section 5: Why Choose AGROFLY & Commitment to Farmers (NO CARDS) -->
+      <section class="sec alt" id="why-choose-us">
+        <div class="container">
+          <div class="sec-h text-center reveal mb-5">
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-2">PROVEN FIELD VALUE</span>
+            <h2 class="fw-bold">
+              Why Choose AGROFLY &amp; Our Commitment to Farmers
+            </h2>
+            <p class="text-muted mx-auto" style="max-width: 680px;">
+              Designed from the soil up to maximize farmer net earnings, preserve health, and safeguard yield stability.
+            </p>
+          </div>
+          <div class="row g-4 reveal">
+            <div class="col-md-6 col-lg-4">
+              <div class="editorial-benefit-item">
+                <div class="editorial-benefit-icon"><i class="bi bi-clock-history"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-body">10× Faster Field Spraying</h6>
+                  <p class="text-muted small mb-0">Treats 1 acre in 10–12 minutes. A single AGROFLY team covers 30–35 acres daily, beating manual labour bottlenecks.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="editorial-benefit-item">
+                <div class="editorial-benefit-icon"><i class="bi bi-droplet-half"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-body">90% Fresh Water Conservation</h6>
+                  <p class="text-muted small mb-0">Ultra-low volume spraying needs only 8–10 litres per acre compared to 150–200 litres for manual knapsacks, preserving village borewells.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="editorial-benefit-item">
+                <div class="editorial-benefit-icon"><i class="bi bi-shield-shaded"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-body">Zero Root Trampling &amp; Compaction</h6>
+                  <p class="text-muted small mb-0">Operates seamlessly over flooded paddy and muddy soil where heavy tractors sink and manual workers damage tillers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="editorial-benefit-item">
+                <div class="editorial-benefit-icon"><i class="bi bi-patch-check"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-body">100% DGCA Certified Pilots</h6>
+                  <p class="text-muted small mb-0">All sorties are piloted by licensed RPC remote pilots trained in chemical safety, civil aviation rules, and weather assessment.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="editorial-benefit-item">
+                <div class="editorial-benefit-icon"><i class="bi bi-cloud-rain"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-body">Free Rain Re-Spray Guarantee</h6>
+                  <p class="text-muted small mb-0">If sudden rain washes off your chemical application within 4 hours of flight, we provide a 100% free re-spray sortie.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="editorial-benefit-item">
+                <div class="editorial-benefit-icon"><i class="bi bi-file-earmark-bar-graph"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-body">Verifiable KML Flight Dossier</h6>
+                  <p class="text-muted small mb-0">Receive a digital sortie certificate with geo-tagged boundaries, pilot credentials, and dosage telemetry for PMFBY insurance audits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<section class="sec alt" id="our-journey">
+        <div class="container">
+          <div class="sec-h reveal">
+            <span class="badge rounded-pill bg-success-subtle text-success border border-success-subtle px-3 py-2 mb-2 fw-bold text-uppercase">Historical Milestones</span>
+            <h2>Our Journey &amp; Milestones</h2>
+            <p>From an initial 2-drone pilot in Thanjavur to India's most dependable agricultural drone spraying service network.</p>
+          </div>
+
+          <div class="timeline-rail reveal">
+            <!-- 2019 Milestone -->
+            <div class="timeline-item left">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2019</span>
+                <h5 class="fw-bold mb-2">The Maiden Flight in Thanjavur</h5>
+                <p class="small text-muted mb-0">Founded by agronomy researchers and aerospace engineers. Completed our first 20-acre paddy trial in Tamil Nadu, proving 90% water reduction and zero crop trampling.</p>
+              </div>
+            </div>
+
+            <!-- 2021 Milestone -->
+            <div class="timeline-item right">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2021</span>
+                <h5 class="fw-bold mb-2">DGCA Type Certification &amp; Pilot Academy</h5>
+                <p class="small text-muted mb-0">Awarded official Directorate General of Civil Aviation (DGCA) compliance. Established our remote pilot training wing, qualifying over 50 rural youth as certified agricultural drone captains.</p>
+              </div>
+            </div>
+
+            <!-- 2023 Milestone -->
+            <div class="timeline-item left">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2023</span>
+                <h5 class="fw-bold mb-2">100,000+ Verified Spray Acres</h5>
+                <p class="small text-muted mb-0">Partnered with 24 Farmer Producer Organizations (FPOs) and sugar mills across 4 southern agri-states, deploying high-volume drone swarms for emergency pest outbreaks.</p>
+              </div>
+            </div>
+
+            <!-- 2026 Milestone -->
+            <div class="timeline-item right">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2026</span>
+                <h5 class="fw-bold mb-2">Next-Gen Autonomous Fleet &amp; Live GIS Portal</h5>
+                <p class="small text-muted mb-0">Operating 42+ DGCA hexacopters equipped with AI obstacle avoidance, real-time farm dashboard telemetry, and 1-click booking for over 1,200 commercial growers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section class="sec" id="safety-compliance">
+        <div class="container">
+          <div class="sec-h reveal">
+            <span class="badge rounded-pill bg-success-subtle text-success border border-success-subtle px-3 py-2 mb-2 fw-bold text-uppercase">Field Safety &amp; Governance</span>
+            <h2>Safety &amp; Compliance Standards</h2>
+            <p>Strict operational protocols, DGCA pilot licensing, and comprehensive aerial liability insurance protecting every grower.</p>
+          </div>
+
+          <div class="row g-4 align-items-center reveal">
+            <!-- Left: Governance & Official Accreditations Panel -->
+            <div class="col-lg-5">
+              <div class="bg-card border rounded-4 p-4 shadow-sm h-100">
+                <div class="d-inline-flex p-3 rounded-circle bg-success text-white mb-3 fs-3">
+                  <i class="bi bi-patch-check-fill"></i>
+                </div>
+                <h4 class="fw-bold mb-2">Government of India DGCA Certified</h4>
+                <p class="text-muted small mb-4">Every flight mission is authorized by DGCA-certified Remote Pilot Certificate (RPC) holders, adhering strictly to Drone Rules 2021 aerial safety frameworks.</p>
+
+                <div class="p-3 rounded-3 bg-success-subtle border border-success-subtle text-success mb-3 small">
+                  <strong><i class="bi bi-shield-fill-check me-1"></i> ₹10 Lakh Third-Party Insurance:</strong> Every sortie carries comprehensive aerial damage and liability coverage.
+                </div>
+
+                <div class="d-flex flex-column gap-2 small text-muted">
+                  <div><i class="bi bi-check2-circle text-agro me-2"></i>Ministry of Civil Aviation compliant remote ID tracking</div>
+                  <div><i class="bi bi-check2-circle text-agro me-2"></i>Standard Operating Procedure (SOP) approved by CIB&amp;RC</div>
+                  <div><i class="bi bi-check2-circle text-agro me-2"></i>Calibrated chemical formulation safety limits</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: 5-Point Pre-Flight Protocol Gate -->
+            <div class="col-lg-7">
+              <h5 class="fw-bold mb-3"><i class="bi bi-shield-lock text-agro me-2"></i>Mandatory 5-Step Pre-Flight Safety Gate</h5>
+              <div class="d-flex flex-column gap-2">
+                <div class="safety-check-item">
+                  <div class="safety-check-icon"><i class="bi bi-cloud-sun"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark">Meteorological Wind &amp; Thermal Check</h6>
+                    <small class="text-muted">Flights are automatically suspended if ambient wind speed exceeds 12 km/h or humidity drops below 35% to prevent spray drift.</small>
+                  </div>
+                </div>
+
+                <div class="safety-check-item">
+                  <div class="safety-check-icon"><i class="bi bi-compass"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark">Airspace Green-Zone Digital Clearance</h6>
+                    <small class="text-muted">Digital Sky platform verification ensures zero conflict with local airstrips, defense corridors, or restricted airspace.</small>
+                  </div>
+                </div>
+
+                <div class="safety-check-item">
+                  <div class="safety-check-icon"><i class="bi bi-water"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark">Buffer Zone Exclusion Mapping</h6>
+                    <small class="text-muted">A mandatory 5-meter exclusion buffer is automatically programmed along open canals, drinking ponds, and neighboring sensitive crops.</small>
+                  </div>
+                </div>
+
+                <div class="safety-check-item">
+                  <div class="safety-check-icon"><i class="bi bi-battery-charging"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark">Dual Fail-Safe Return-to-Home (RTH) Calibration</h6>
+                    <small class="text-muted">Drones automatically return to the takeoff point and land gently if battery falls below 20% or controller signal drops for >3 seconds.</small>
+                  </div>
+                </div>
+
+                <div class="safety-check-item">
+                  <div class="safety-check-icon"><i class="bi bi-person-badge"></i></div>
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark">PPE &amp; Ground Crew Standoff Protocols</h6>
+                    <small class="text-muted">All ground mixing staff wear certified chemical respirator masks, nitrile gloves, and eye shields during liquid formulation.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec alt">
+        <div class="container">
+          <div class="sec-h reveal">
+            <h2>
+              Expert Team
+            </h2>
+            <p>
+              The people behind the drones.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+              <div class="team reveal">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=70" alt="Arun Prakash, Founder &amp; CEO">
+                <h5>
+                  Arun Prakash
+                </h5>
+                <small>Founder &amp; CEO</small>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="team reveal">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=70" alt="Meena Krishnan, Head of Agronomy">
+                <h5>
+                  Meena Krishnan
+                </h5>
+                <small>Head of Agronomy</small>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="team reveal">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=70" alt="Karthik Raja, Chief Drone Pilot">
+                <h5>
+                  Karthik Raja
+                </h5>
+                <small>Chief Drone Pilot</small>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="team reveal">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=70" alt="Divya Lakshmi, Operations Lead">
+                <h5>
+                  Divya Lakshmi
+                </h5>
+                <small>Operations Lead</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec stat-band">
+        <div class="container">
+          <div class="row g-3 stats ">
+            <div class="col-6 col-lg-3">
+              <div class="stat reveal">
+                <b><span class="count" data-to="5000">0</span>+</b><small>Acres sprayed</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat reveal">
+                <b><span class="count" data-to="1200">0</span>+</b><small>Happy farmers</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat reveal">
+                <b><span class="count" data-to="30">0</span>%</b><small>Chemical saved</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat reveal">
+                <b><span class="count" data-to="98">0</span>%</b><small>Coverage accuracy</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec ">
+        <div class="container">
+          <div class="sec-h reveal">
+            <h2>
+              Farmer Testimonials
+            </h2>
+            <p>
+            </p>
+          </div>
+          <div class="row g-4" data-r="tests" data-n="3" >
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container text-center reveal">
+          <h2>
+            Join 1,200+ farmers
+          </h2>
+          <p>
+            Let our drones protect your next crop.
+          </p>
+          <a class="btn btn-lime btn-lg" href="dashboard/book-spraying.html">Book a Drone Service</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a class="brand mb-3 d-inline-flex" href="index.html">
+            <span class="logo-box"><img src="assets/img/logo.svg" alt="AgroFly" class="brand-drone-icon"></span>
+            <span>AGRO<b>FLY</b></span>
+            </a>
+            <p>
+              AgroFly delivers precision drone spraying for paddy, cotton, sugarcane, maize, vegetables and more — safer for farmers, kinder to crops.
+            </p>
+            <div class="social">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>
+              Quick Links
+            </h6>
+            <ul>
+              <li>
+                <a href="about.html">About Us</a>
+              </li>
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="dashboard/index.html">Farmer Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>
+              Our Services
+            </h6>
+            <ul>
+              <li>
+                <a href="service-details.html?s=0">Paddy Drone Spraying</a>
+              </li>
+              <li>
+                <a href="service-details.html?s=1">Cotton Crop Spraying</a>
+              </li>
+              <li>
+                <a href="service-details.html?s=2">Sugarcane Spraying</a>
+              </li>
+              <li>
+                <a href="service-details.html?s=6">Pesticide Application</a>
+              </li>
+              <li>
+                <a href="service-details.html?s=7">Fertilizer Spraying</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6>
+              Contact &amp; Newsletter
+            </h6>
+            <p class="mb-1">
+              <i class="bi bi-geo-alt"></i> 24 Agri Park Road, Coimbatore, Tamil Nadu
+            </p>
+            <p class="mb-1">
+              <i class="bi bi-telephone"></i> +91 98765 43210 &nbsp; <i class="bi bi-envelope"></i> hello@agrofly.example
+            </p>
+            <form class="news mt-3" novalidate data-form="news">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email" aria-label="Email" data-v="required email">
+                <button class="btn btn-lime">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="foot-b">
+          <span>© 2026 AgroFly. Demo template.</span>
+          <span><a href="#">Privacy Policy</a> · <a href="#">Terms and Conditions</a></span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/rtl.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/authentication.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

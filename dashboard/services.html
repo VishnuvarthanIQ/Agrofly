@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Available Spraying Services | AgroFly Guest Dashboard</title>
+    <meta name="description" content="Explore AgroFly's 8 specialized agricultural drone spraying services for major Indian crops.">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <link id="bsCss" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>/* apply saved theme + direction before paint */(function(){var d=document.documentElement,t=localStorage.getItem('agro_theme')||'light',r=localStorage.getItem('agro_dir')||'ltr';d.dataset.bsTheme=t;d.dir=r;if(r==='rtl')document.getElementById('bsCss').href=document.getElementById('bsCss').href.replace('bootstrap.min.css','bootstrap.rtl.min.css')})()</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>tailwind.config={corePlugins:{preflight:false,visibility:false},blocklist:['collapse']}</script>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/animations.css" rel="stylesheet">
+    <link href="../assets/css/responsive.css" rel="stylesheet">
+    <link href="../assets/css/dashboard.css" rel="stylesheet">
+  </head>
+  <body data-root="../" data-page="d-services" class="dash-page">
+    <div class="dash">
+      <!-- 2. Dashboard Left Sidebar (8 items, guest access, collapsible on mobile) -->
+      <aside class="sidebar" id="sb">
+        <a class="brand text-white" href="../index.html">
+          <span class="logo-box bg-white"><img src="../assets/img/logo.svg" alt="AgroFly" class="brand-drone-icon"></span>
+          <span>AGRO<b class="text-lime">FLY</b></span>
+        </a>
+        <nav>
+          <a class="" href="index.html"><i class="bi bi-speedometer2"></i><span>Overview</span></a>
+          <a class="" href="profile.html"><i class="bi bi-person-circle"></i><span>Farmer Profile</span></a>
+          <a class="" href="book-spraying.html"><i class="bi bi-calendar-plus"></i><span>Book Drone Spraying</span></a>
+          <a class="" href="bookings.html"><i class="bi bi-card-checklist"></i><span>My Booking Requests</span></a>
+          <a class="" href="tracking.html"><i class="bi bi-geo-alt"></i><span>Track Service</span></a>
+          <a class="on" href="services.html"><i class="bi bi-grid-3x3-gap"></i><span>Available Services</span></a>
+          <a class="" href="calculator.html"><i class="bi bi-calculator"></i><span>Pricing & Cost Calculator</span></a>
+          <a class="" href="support.html"><i class="bi bi-headset"></i><span>Contact Support</span></a>
+          <a class="" href="../index.html"><i class="bi bi-box-arrow-left"></i><span>Back to Website</span></a>
+        </nav>
+      </aside>
+      <div class="sb-back" id="sbBack"></div>
+
+      <!-- Main Dashboard Container -->
+      <div class="dmain">
+        <!-- Top Dashboard Bar -->
+        <header class="dtop">
+          <button class="icon-btn d-lg-none" id="sbBtn" aria-label="Toggle Navigation Menu" type="button" title="Open Navigation Menu">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="d-flex align-items-center gap-2 flex-grow-1 min-w-0 header-title-wrap">
+            <h1 class="h5 m-0 fw-bold text-truncate"><span class="d-none d-md-inline">Available Spraying Services</span><span class="d-inline d-md-none">Services</span></h1>
+          </div>
+                    <div class="d-flex align-items-center gap-2 flex-shrink-0 header-controls-wrap">
+            <!-- 1. Theme Toggle & 2. RTL/LTR Toggle -->
+            <div class="nav-toggles-row d-inline-flex align-items-center gap-1 flex-shrink-0">
+              <button class="icon-btn js-theme" type="button" aria-label="Toggle theme mode" title="Toggle Light / Dark Mode">
+                <i class="bi bi-moon-stars"></i>
+              </button>
+              <button class="icon-btn js-rtl" type="button" aria-label="Toggle text direction" title="Toggle Direction (RTL / LTR)">
+                <i class="bi bi-arrow-left-right"></i>
+              </button>
+            </div>
+
+            <!-- 3. Username/Profile Dropdown Slot -->
+            <span id="dashAuthSlot" class="d-inline-flex align-items-center flex-shrink-0"></span>
+
+            <!-- 4. CT&bull; Buttons -->
+            <div class="header-cta-group d-inline-flex align-items-center gap-1.5 flex-shrink-0">
+              <a href="book-spraying.html" class="btn btn-agro btn-sm d-inline-flex align-items-center gap-1.5 shadow-sm text-nowrap header-cta-book" title="Book Drone Spraying">
+                <i class="bi bi-calendar-plus"></i>
+                <span class="d-none d-sm-inline">Book Spraying</span>
+              </a>
+              <a href="support.html" class="btn btn-outline-agro btn-sm d-none d-md-inline-flex align-items-center gap-1.5 shadow-sm text-nowrap header-cta-support" title="Contact Support">
+                <i class="bi bi-headset"></i>
+                <span class="d-none d-xl-inline">Support</span>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <!-- Body Content -->
+        <main class="dbody">
+          <div class="mb-4">
+            <h4 class="fw-bold mb-1">Autonomous Drone Spraying Solutions</h4>
+            <p class="text-muted">High-precision crop protection, foliar nutrition, and ultra-low-volume spraying with DGCA-certified flight crews.</p>
+          </div>
+
+          <!-- 7. 8 Professional Service Cards -->
+          <div class="row g-4">
+            <!-- 1. Paddy Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/paddy-drone-spraying.jpg" alt="Paddy Spraying" loading="lazy">
+                  <span class="crop-badge">Paddy / Rice</span>
+                  <span class="rate-badge">&#8377;450 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Paddy Spraying</div>
+                  <div class="service-desc">Complete coverage for blast, brown planthopper (BPH), and sheath blight in flooded paddies.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Zero plant trampling or mud tracking</li>
+                    <li><i class="bi bi-check-circle-fill"></i> 90% water saving with micron droplets</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Covers 30&ndash;35 acres/day per drone team</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Paddy%20Spraying&crop=Paddy" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Paddy%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Cotton Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/cotton-drone-spraying.jpg" alt="Cotton Spraying" loading="lazy">
+                  <span class="crop-badge">Commercial Crop</span>
+                  <span class="rate-badge">&#8377;480 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Cotton Spraying</div>
+                  <div class="service-desc">Downward prop wash flips dense cotton leaves to reach hidden pink bollworms and whiteflies.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Canopy turbulence coats leaf undersides</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Fast 6-minute acre turnaround</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Eliminates manual worker skin contact</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Cotton%20Spraying&crop=Cotton" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Cotton%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Sugarcane Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/sugarcane-drone-spraying.jpg" alt="Sugarcane Spraying" loading="lazy">
+                  <span class="crop-badge">Tall Canopy</span>
+                  <span class="rate-badge">&#8377;550 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Sugarcane Spraying</div>
+                  <div class="service-desc">Solves the impossible challenge of entering 12ft tall cane fields to control top borer and pyrilla.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Autonomous terrain-follow radar</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Reaches dense stalk junctions</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Safe operations with zero crop injury</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Sugarcane%20Spraying&crop=Sugarcane" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Sugarcane%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Maize Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/maize-drone-spraying.jpg" alt="Maize Spraying" loading="lazy">
+                  <span class="crop-badge">Grain & Corn</span>
+                  <span class="rate-badge">&#8377;460 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Maize Spraying</div>
+                  <div class="service-desc">Downward vortex atomization penetrates deep into central maize whorls to eradicate fall armyworm.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Direct whorl droplet deposition</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Fall Armyworm (FAW) specialist flight</li>
+                    <li><i class="bi bi-check-circle-fill"></i> 25&ndash;30 acres covered per day</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Maize%20Spraying&crop=Maize" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Maize%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Groundnut Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/groundnut-drone-spraying.jpg" alt="Groundnut Spraying" loading="lazy">
+                  <span class="crop-badge">Oilseeds</span>
+                  <span class="rate-badge">&#8377;450 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Groundnut Spraying</div>
+                  <div class="service-desc">Low-altitude hugging flight delivers uniform fungicide coverage to suppress tikka and rust.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Complete foliar canopy penetration</li>
+                    <li><i class="bi bi-check-circle-fill"></i> 30% reduction in chemical dosage</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Preserves soil moisture retention</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Groundnut%20Spraying&crop=Groundnut" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Groundnut%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Vegetable Crop Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/vegetable-drone-spraying.jpg" alt="Vegetable Crop Spraying" loading="lazy">
+                  <span class="crop-badge">Horticulture</span>
+                  <span class="rate-badge">&#8377;520 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Vegetable Crop Spraying</div>
+                  <div class="service-desc">Micronized mist for sensitive vegetable crops like chili, tomato, onion, and brinjal without leaf burn.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Ultra-fine 100-micron droplet mist</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Prevents blossom drop & fruit scorch</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Micro-plot precision GPS navigation</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Vegetable%20Crop%20Spraying&crop=Vegetables" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Vegetable%20Crop%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Fertilizer Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/fertilizer-drone-spraying.jpg" alt="Fertilizer Spraying" loading="lazy">
+                  <span class="crop-badge">Foliar Nutrition</span>
+                  <span class="rate-badge">&#8377;500 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Fertilizer Spraying</div>
+                  <div class="service-desc">Direct stomatal nutrition via Nano Urea, DAP, liquid potassium, and micronutrient sprays.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Up to 4x faster nutrient absorption</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Zero ground leaching or runoff</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Enhances green canopy yield by 15%</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Fertilizer%20Spraying" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Fertilizer%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Large Acreage Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/large-acreage-drone-spraying.jpg" alt="Large Acreage Spraying" loading="lazy">
+                  <span class="crop-badge">Commercial Farms</span>
+                  <span class="rate-badge">&#8377;420 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Large Acreage Spraying</div>
+                  <div class="service-desc">Multi-drone coordinated fleet sorties for corporate plantations, estate farming, and FPO clusters.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> 80&ndash;120 acres covered per day</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Wholesale volume discount rates</li>
+                    <li><i class="bi bi-check-circle-fill"></i> On-site mobile battery generator hub</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Large%20Acreage%20Spraying" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Large%20Acreage%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Mustard Drone Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/mustard-drone-spraying.jpg" alt="Mustard Drone Spraying" loading="lazy">
+                  <span class="crop-badge">Oilseeds</span>
+                  <span class="rate-badge">&#8377;480 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Mustard Drone Spraying</div>
+                  <div class="service-desc">Contactless aerial canopy protection preserving delicate flowering branches while eradicating aphids and Alternaria blight.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Zero branch damage in bloom</li>
+                    <li><i class="bi bi-check-circle-fill"></i> 28&ndash;32 Acres / day throughput</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Ultra-uniform micron spray over blossoms</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Mustard%20Drone%20Spraying&crop=Mustard" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Mustard%20Drone%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Wheat & Cereal Drone Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/wheat-drone-spraying.jpg" alt="Wheat &amp; Cereal Drone Spraying" loading="lazy">
+                  <span class="crop-badge">Wheat &amp; Grains</span>
+                  <span class="rate-badge">&#8377;470 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Wheat &amp; Cereal Spraying</div>
+                  <div class="service-desc">Broadacre canopy penetration for yellow rust, powdery mildew, and liquid foliar urea nutrition with zero soil compaction.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> 100% rust &amp; blight canopy coverage</li>
+                    <li><i class="bi bi-check-circle-fill"></i> 28&ndash;32 Acres / day throughput</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Zero wheel rutting or plant crushing</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Wheat%20Drone%20Spraying&crop=Wheat" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Wheat%20Drone%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11. Soybean & Pulses Drone Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/soybean-drone-spraying.jpg" alt="Soybean &amp; Pulses Drone Spraying" loading="lazy">
+                  <span class="crop-badge">Pulses &amp; Legumes</span>
+                  <span class="rate-badge">&#8377;460 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Soybean &amp; Pulses Spraying</div>
+                  <div class="service-desc">Rotary atomized mist targeting pod borers, semiloopers, and anthracnose through dense multi-branching legume canopies.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> Deep canopy vortex penetration</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Effective pod borer suppression</li>
+                    <li><i class="bi bi-check-circle-fill"></i> 90% water saving over flood spray</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Soybean%20Drone%20Spraying&crop=Soybean" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Soybean%20Drone%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12. Plantation & Spices Drone Spraying -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="dash-service-card">
+                <div class="card-img-wrap">
+                  <img src="../assets/img/services/plantation-drone-spraying.jpg" alt="Plantation &amp; Spices Drone Spraying" loading="lazy">
+                  <span class="crop-badge">Plantations &amp; Spices</span>
+                  <span class="rate-badge">&#8377;540 / acre</span>
+                </div>
+                <div class="card-body">
+                  <div class="service-title">Plantation &amp; Spices Spraying</div>
+                  <div class="service-desc">Autonomous 3D terrain-following aerial spray for undulating hilly plantations and high-density commercial cash crops.</div>
+                  <ul class="benefit-list">
+                    <li><i class="bi bi-check-circle-fill"></i> 3D contour terrain-following radar</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Thorough thrips &amp; mite eradication</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Reaches steep terraced acreage</li>
+                  </ul>
+                  <div class="d-flex gap-2 mt-auto">
+                    <a href="book-spraying.html?service=Plantation%20Drone%20Spraying&crop=Chilli" class="btn btn-agro btn-sm flex-grow-1">Book Now</a>
+                    <a href="calculator.html?service=Plantation%20Drone%20Spraying" class="btn btn-outline-agro btn-sm" title="Calculate Cost"><i class="bi bi-calculator"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/rtl.js"></script>
+    <script src="../assets/js/validation.js"></script>
+    <script src="../assets/js/authentication.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

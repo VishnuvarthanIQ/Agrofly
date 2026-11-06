@@ -1,0 +1,983 @@
+/* ==========================================================================
+   AGROFLY - RESPONSIVE STYLES
+   Exact Certified Breakpoints: 320px, 768px, 1024px, 1440px (and all modern viewports)
+   Strict Overflow Protection, RTL/LTR Directional Rules & Touch Optimizations
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL CONTAINER & OVERFLOW PREVENTION
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   2. BREAKPOINT: 320px ULTRA-COMPACT MOBILE (320px to 375px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  .container {
+    padding-inline: 10px !important;
+  }
+
+  /* Header & Navigation at 320px */
+  .site-header {
+    padding: 0.35rem 0 !important;
+  }
+
+  .site-header .brand {
+    font-size: 1.34rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.015em !important;
+    gap: 0.45rem !important;
+    line-height: 1.2 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .site-header .brand .logo-box {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 10px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .site-header .brand .brand-drone-icon {
+    width: 22px !important;
+    height: 22px !important;
+    object-fit: contain !important;
+  }
+
+  .navbar-toggler,
+  .site-header .navbar-toggler {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1.3rem !important;
+    border-radius: 9px !important;
+    padding: 0 !important;
+  }
+
+  /* Mobile Navigation Drawer at 320px */
+  #mnav.show,
+  .navbar-collapse.show {
+    padding: 0.85rem 0.65rem !important;
+    border-radius: 14px !important;
+    margin-top: 0.4rem !important;
+    width: 100% !important;
+  }
+
+  #mnav.show .navbar-nav {
+    gap: 0.25rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  #mnav.show .navbar-nav .nav-link {
+    font-size: 0.9rem !important;
+    padding: 0.4rem 0.85rem !important;
+  }
+
+  #mnav.show .navbar-nav .dropdown-menu {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.35rem !important;
+  }
+
+  #mnav.show .nav-actions {
+    padding-top: 0.55rem !important;
+    gap: 0.45rem !important;
+    width: 100% !important;
+  }
+
+  #mnav.show .nav-actions .btn {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    padding: 0.45rem 0.75rem !important;
+    font-size: 0.84rem !important;
+  }
+
+  #mnav.show .nav-actions .nav-toggles-row {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Hero Section at 320px */
+  .home1 {
+    min-height: auto !important;
+    padding: 2.5rem 0 !important;
+  }
+
+  .home1 h1 {
+    font-size: 1.6rem !important;
+    line-height: 1.22 !important;
+    word-break: break-word !important;
+  }
+
+  .home1 p {
+    font-size: 0.88rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .home2 {
+    min-height: auto !important;
+    max-height: none !important;
+    height: auto !important;
+    display: block !important;
+    overflow: visible !important;
+    padding: 2.75rem 0 3rem !important;
+  }
+
+  .home2 h1 {
+    font-size: 1.55rem !important;
+    line-height: 1.22 !important;
+  }
+
+  .page-hero {
+    min-height: 220px !important;
+    padding: 2.25rem 0 !important;
+  }
+
+  .page-hero h1 {
+    font-size: 1.55rem !important;
+  }
+
+  .hero-in .d-flex {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.45rem !important;
+  }
+
+  .hero-in .btn,
+  .btn-lg {
+    width: 100% !important;
+    font-size: 0.88rem !important;
+    padding: 0.6rem 0.85rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .hero-stats {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    padding: 0.65rem !important;
+  }
+
+  .hero-stats b {
+    font-size: 1.25rem !important;
+  }
+
+  .hero-stats small {
+    font-size: 0.75rem !important;
+  }
+
+  .card-f {
+    display: none !important;
+  }
+
+  /* Sections & Headings at 320px */
+  .sec {
+    padding: 2.25rem 0 !important;
+  }
+
+  .sec-h {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .sec-h h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .sec-h p {
+    font-size: 0.82rem !important;
+  }
+
+  /* Cards at 320px */
+  .fc, .step, .team, .pkg, .svc, .tcard, .bcard, .dcard,
+  .sol-card, .tech-spec-card, .crop-pro-card {
+    padding: 1.25rem 1rem !important;
+    border-radius: 16px !important;
+  }
+
+  .sol-card h5, .tech-spec-card h5, .crop-pro-card h5 {
+    font-size: 1.08rem !important;
+  }
+
+  .sol-card .sol-metrics {
+    gap: 0.4rem !important;
+    padding: 0.65rem 0.75rem !important;
+  }
+
+  .svc .im {
+    height: 150px !important;
+  }
+
+  .svc .bd h5 {
+    font-size: 1rem !important;
+  }
+
+  .pkg .pr {
+    font-size: 1.75rem !important;
+  }
+
+  .filters {
+    gap: 0.25rem !important;
+  }
+
+  .filters button, .seg button {
+    padding: 0.3rem 0.5rem !important;
+    font-size: 0.74rem !important;
+  }
+
+  /* Dashboard Overview & Subpages at 320px */
+  .dtop {
+    height: 54px !important;
+    min-height: 54px !important;
+    max-height: 54px !important;
+    padding: 0 0.45rem !important;
+    gap: 0.3rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .dtop h1 {
+    font-size: 0.85rem !important;
+    max-width: 135px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .dtop .icon-btn {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 0.84rem !important;
+    border-radius: 8px !important;
+  }
+
+  .dtop #dashAuthSlot .btn {
+    padding: 0.25rem 0.48rem !important;
+    font-size: 0.72rem !important;
+    white-space: nowrap !important;
+  }
+
+  .dbody {
+    padding: 0.75rem 0.55rem 2.5rem !important;
+  }
+
+  .guest-banner {
+    padding: 1.1rem 0.75rem !important;
+    border-radius: 14px !important;
+  }
+
+  .guest-banner h2 {
+    font-size: 1.2rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .guest-banner p {
+    font-size: 0.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .banner-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.4rem !important;
+  }
+
+  .banner-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 0.82rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .kpi {
+    padding: 0.75rem !important;
+  }
+
+  .kpi i {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1.1rem !important;
+  }
+
+  .dcard h3, .kpi-val {
+    font-size: 1.3rem !important;
+  }
+
+  .table-responsive {
+    border-radius: 10px !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .table {
+    min-width: 480px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .table td, .table th {
+    padding: 0.45rem 0.5rem !important;
+  }
+
+  /* Modals at 320px */
+  .modal-dialog {
+    margin: 0.4rem !important;
+    max-width: calc(100vw - 0.8rem) !important;
+  }
+
+  .modal-content {
+    border-radius: 14px !important;
+    padding: 0.5rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. BREAKPOINT: MOBILE DEVICES (376px to 767.98px: 390px, 430px, 576px, etc.)
+   -------------------------------------------------------------------------- */
+@media (min-width: 376px) and (max-width: 767.98px) {
+  .container {
+    padding-inline: 14px;
+  }
+  .site-header {
+    padding: 0.45rem 0 !important;
+  }
+  .site-header .brand {
+    font-size: 1.48rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+    gap: 0.55rem !important;
+    line-height: 1.2 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+  .site-header .brand .logo-box {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 11px !important;
+    flex-shrink: 0 !important;
+  }
+  .site-header .brand .brand-drone-icon {
+    width: 25px !important;
+    height: 25px !important;
+    object-fit: contain !important;
+  }
+  .sec {
+    padding: 2.75rem 0;
+  }
+  .home1 h1 {
+    font-size: 2rem;
+  }
+  .home2 h1 {
+    font-size: 1.95rem;
+  }
+  .btn-lg {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-in .d-flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-in .d-flex .btn {
+    width: 100%;
+  }
+  .guest-banner {
+    padding: 1.35rem 1rem;
+  }
+  .banner-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .banner-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .table-responsive {
+    border-radius: 12px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. BREAKPOINT: 768px TABLET (768px to 991.98px)
+   Balanced 2-column grids, optimized touch targets, clean mobile menu dropdown
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    padding-inline: 20px !important;
+    max-width: 740px !important;
+  }
+
+  .site-header {
+    padding: 0.6rem 0 !important;
+  }
+
+  .site-header .brand {
+    font-size: 1.48rem !important;
+    font-weight: 800 !important;
+    gap: 0.6rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .site-header .brand .logo-box {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 12px !important;
+  }
+
+  .site-header .brand .brand-drone-icon {
+    width: 26px !important;
+    height: 26px !important;
+    object-fit: contain !important;
+  }
+
+  .navbar-toggler {
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 1.5rem !important;
+  }
+
+  /* Tablet Dropdown Card */
+  #mnav.show,
+  .navbar-collapse.show {
+    padding: 1.35rem 1.5rem !important;
+    border-radius: 18px !important;
+  }
+
+  #mnav.show .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.4rem 0.8rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  #mnav.show .navbar-nav .nav-item {
+    width: auto !important;
+  }
+
+  #mnav.show .navbar-nav .nav-link {
+    font-size: 0.95rem !important;
+    padding: 0.4rem 0.85rem !important;
+  }
+
+  #mnav.show .nav-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.75rem !important;
+  }
+
+  #mnav.show .nav-actions .btn {
+    width: auto !important;
+    min-width: 150px !important;
+  }
+
+  /* Hero Section on tablets */
+  .home1 {
+    min-height: auto !important;
+    padding: 3.5rem 0 4rem !important;
+  }
+
+  .home1 h1 {
+    font-size: 2.6rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .home2 h1 {
+    font-size: 2.4rem !important;
+  }
+
+  .vid-wrap {
+    height: 360px !important;
+    max-width: 560px !important;
+    margin-inline: auto !important;
+  }
+
+  /* Dashboard at 768px */
+  .dmain {
+    margin-inline-start: 0 !important;
+  }
+
+  .dtop {
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    padding: 0 1.25rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .dbody {
+    padding: 1.25rem 1.5rem 3rem !important;
+  }
+
+  .guest-banner {
+    padding: 1.75rem 1.5rem !important;
+  }
+
+  .guest-banner h2 {
+    font-size: 1.65rem !important;
+  }
+
+  .banner-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 0.75rem !important;
+  }
+
+  .banner-actions .btn {
+    flex: 1 1 auto !important;
+  }
+
+  .track-stepper {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+
+  .track-step {
+    display: flex !important;
+    text-align: left !important;
+    align-items: center !important;
+    gap: 1rem !important;
+  }
+
+  [dir="rtl"] .track-step {
+    text-align: right !important;
+  }
+
+  .track-step-line {
+    display: none !important;
+  }
+
+  /* Cards at 768px */
+  .sol-card, .tech-spec-card, .crop-pro-card {
+    padding: 1.85rem 1.4rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. BREAKPOINT: 1024px COMPACT DESKTOP (992px to 1199.98px)
+   Prevents header crowding, eliminates action button clipping, ensures perfect alignment
+   -------------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    padding-inline: 16px !important;
+    max-width: 100% !important;
+  }
+
+  .site-header {
+    padding: 0.45rem 0 !important;
+  }
+
+  .site-header .navbar {
+    padding: 0 !important;
+  }
+
+  /* Compact Brand */
+  .site-header .brand {
+    font-size: 1.38rem !important;
+    font-weight: 800 !important;
+    gap: 0.45rem !important;
+    margin-inline-end: 0.5rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .site-header .brand .logo-box {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .site-header .brand .brand-drone-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  /* Navbar Nav: Align rightwards without pushing actions off screen */
+  #mnav,
+  #mnav.collapse,
+  #mnav.navbar-collapse,
+  .navbar-expand-lg #mnav,
+  .navbar-expand-lg .navbar-collapse,
+  .site-header #mnav,
+  .site-header .navbar-collapse {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-basis: auto !important;
+    flex-grow: 1 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .navbar-expand-lg .navbar-toggler,
+  .site-header .navbar-toggler {
+    display: none !important;
+  }
+
+  .navbar-expand-lg .navbar-nav,
+  .site-header .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: 0.45rem !important;
+    gap: 0 !important;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 !important;
+  }
+
+  /* Compact Nav Links */
+  .navbar .nav-link,
+  .site-header .navbar-nav .nav-link {
+    padding: 0.38rem 0.45rem !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+  }
+
+  /* Compact Action Buttons & Controls */
+  .navbar .nav-actions,
+  .site-header .nav-actions {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    flex-shrink: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .nav-toggles-row {
+    gap: 4px !important;
+  }
+
+  .nav-toggles-row .icon-btn {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.82rem !important;
+    border-radius: 8px !important;
+    padding: 0 !important;
+  }
+
+  .site-header .nav-actions #authSlot {
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .site-header .nav-actions #authSlot .btn {
+    padding: 0.32rem 0.62rem !important;
+    font-size: 0.78rem !important;
+    border-radius: 99px !important;
+    white-space: nowrap !important;
+  }
+
+  .site-header .nav-actions #authSlot .dropdown-toggle {
+    padding: 0.32rem 0.65rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  .site-header .nav-actions .btn-agro {
+    padding: 0.32rem 0.72rem !important;
+    font-size: 0.78rem !important;
+    border-radius: 99px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Hero at 1024px */
+  .home1 h1 {
+    font-size: 2.85rem !important;
+  }
+
+  .home2 h1 {
+    font-size: 2.75rem !important;
+  }
+
+  /* Dashboard at 1024px */
+  .dmain {
+    margin-inline-start: 280px !important;
+  }
+
+  .dtop {
+    height: 70px !important;
+    min-height: 70px !important;
+    max-height: 70px !important;
+    padding: 0 1.15rem !important;
+    gap: 0.5rem !important;
+    box-sizing: border-box !important;
+  }
+  .dtop h1 {
+    font-size: 1.05rem !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+  }
+  .dtop #dashSessionBadge {
+    padding: 0.22rem 0.55rem !important;
+    font-size: 0.72rem !important;
+  }
+  .dtop .btn-sm {
+    padding: 0.3rem 0.62rem !important;
+    font-size: 0.78rem !important;
+    white-space: nowrap !important;
+  }
+  .dbody {
+    padding-inline: 1.25rem !important;
+  }
+
+  .guest-banner {
+    padding: 1.85rem 1.5rem !important;
+  }
+
+  .guest-banner h2 {
+    font-size: 1.75rem !important;
+  }
+
+  /* Cards at 1024px */
+  .sol-card, .tech-spec-card, .crop-pro-card {
+    padding: 1.65rem 1.25rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. BREAKPOINT: STANDARD DESKTOP (1200px to 1399.98px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .container {
+    max-width: 1140px !important;
+    padding-inline: 20px !important;
+  }
+
+  .navbar-expand-lg .navbar-nav,
+  .site-header .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .navbar .nav-link {
+    padding: 0.5rem 0.7rem !important;
+    font-size: 0.92rem !important;
+  }
+
+  .site-header .nav-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.55rem !important;
+  }
+
+  .dmain {
+    margin-inline-start: 280px !important;
+  }
+
+  .dtop, .dbody {
+    padding-inline: 2.25rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. BREAKPOINT: 1440px LARGE DESKTOP (1400px to 1920px+)
+   Spacious container, elegant typography, generous card grids
+   -------------------------------------------------------------------------- */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+    padding-inline: 24px !important;
+  }
+
+  .site-header {
+    padding: 0.75rem 0 !important;
+  }
+
+  .site-header .brand {
+    font-size: 1.4rem !important;
+    gap: 0.65rem !important;
+  }
+
+  .site-header .brand .logo-box {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .site-header .brand .brand-drone-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .navbar-expand-lg .navbar-nav,
+  .site-header .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .navbar .nav-link {
+    padding: 0.55rem 0.95rem !important;
+    font-size: 0.98rem !important;
+    font-weight: 600 !important;
+  }
+
+  .site-header .nav-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+
+  .nav-toggles-row .icon-btn {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1.05rem !important;
+  }
+
+  .site-header .nav-actions .btn {
+    padding: 0.45rem 1.15rem !important;
+    font-size: 0.92rem !important;
+  }
+
+  /* Hero at 1440px */
+  .home1 h1 {
+    font-size: 3.85rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .home1 p {
+    font-size: 1.25rem !important;
+  }
+
+  .home2 h1 {
+    font-size: 3.6rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .sec-h h2 {
+    font-size: 2.6rem !important;
+  }
+
+  .sec-h p {
+    font-size: 1.15rem !important;
+  }
+
+  .sec {
+    padding: 5.5rem 0 !important;
+  }
+
+  /* Dashboard at 1440px */
+  .dmain {
+    margin-inline-start: 280px !important;
+  }
+
+  .dtop, .dbody {
+    padding-inline: 3rem !important;
+    max-width: 1600px !important;
+  }
+
+  .guest-banner {
+    padding: 2.5rem 2.25rem !important;
+  }
+
+  .guest-banner h2 {
+    font-size: 2.1rem !important;
+  }
+
+  .guest-banner p {
+    font-size: 1.1rem !important;
+    max-width: 850px !important;
+  }
+
+  .dcard {
+    padding: 1.75rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   8. RTL DIRECTIONAL RULES
+   -------------------------------------------------------------------------- */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+[dir="rtl"] .ticks li {
+  padding-inline-start: 1.8rem;
+  padding-inline-end: 0;
+}
+
+[dir="rtl"] .ticks li::before {
+  inset-inline-start: 0;
+  inset-inline-end: auto;
+}
+
+[dir="rtl"] .btn-eye {
+  border-radius: 12px 0 0 12px !important;
+}
+
+[dir="rtl"] .news .form-control {
+  border-radius: 0 99px 99px 0;
+}
+
+[dir="rtl"] .news .btn {
+  border-radius: 99px 0 0 99px;
+}
+
+[dir="rtl"] .vid-wrap {
+  border-radius: 36px 36px 36px 120px;
+}
+
+[dir="rtl"] .blob2 {
+  inset: -120px -120px auto auto;
+}
+
+[dir="rtl"] .f2 {
+  margin-inline-start: 0;
+  margin-inline-end: 3rem;
+}
+
+/* Services Page & Rate Card Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .table-responsive table {
+    min-width: 640px;
+  }
+  .page-hero .display-5 {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .table-responsive table {
+    min-width: 580px;
+  }
+  .page-hero .display-5 {
+    font-size: 1.6rem;
+  }
+}

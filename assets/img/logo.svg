@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Central Quadcopter Body -->
+  <rect x="18" y="18" width="12" height="12" rx="3.5" fill="#1B7A45" stroke="#104D32" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="3" fill="#A6D94B"/>
+  
+  <!-- Drone Arms (Diagonal) -->
+  <path d="M19 19L11 11M29 19L37 11M19 29L11 37M29 29L37 37" stroke="#104D32" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Rotors / Propeller Guards -->
+  <circle cx="10" cy="10" r="5.5" stroke="#1B7A45" stroke-width="1.8" fill="rgba(166, 217, 75, 0.25)"/>
+  <circle cx="38" cy="10" r="5.5" stroke="#1B7A45" stroke-width="1.8" fill="rgba(166, 217, 75, 0.25)"/>
+  <circle cx="10" cy="38" r="5.5" stroke="#1B7A45" stroke-width="1.8" fill="rgba(166, 217, 75, 0.25)"/>
+  <circle cx="38" cy="38" r="5.5" stroke="#1B7A45" stroke-width="1.8" fill="rgba(166, 217, 75, 0.25)"/>
+  
+  <!-- Rotor Hubs -->
+  <circle cx="10" cy="10" r="1.5" fill="#104D32"/>
+  <circle cx="38" cy="10" r="1.5" fill="#104D32"/>
+  <circle cx="10" cy="38" r="1.5" fill="#104D32"/>
+  <circle cx="38" cy="38" r="1.5" fill="#104D32"/>
+
+  <!-- Propeller Blades -->
+  <path d="M7 10H13M10 7V13" stroke="#A6D94B" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M35 10H41M38 7V13" stroke="#A6D94B" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M7 38H13M10 35V41" stroke="#A6D94B" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M35 38H41M38 35V41" stroke="#A6D94B" stroke-width="1.2" stroke-linecap="round"/>
+  
+  <!-- Agriculture Spraying Nozzles / Droplets (Downward Fine Spray) -->
+  <path d="M22 31L20 34M26 31L28 34" stroke="#A6D94B" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="24" cy="35" r="1" fill="#A6D94B"/>
+  <circle cx="21" cy="38" r="0.8" fill="#A6D94B"/>
+  <circle cx="27" cy="38" r="0.8" fill="#A6D94B"/>
+</svg>
