@@ -598,7 +598,7 @@ html, body {
     font-size: 1.38rem !important;
     font-weight: 800 !important;
     gap: 0.45rem !important;
-    margin-inline-end: 0.5rem !important;
+    margin-inline-end: 1.25rem !important;
     flex-shrink: 0 !important;
   }
 
@@ -772,6 +772,11 @@ html, body {
     padding-inline: 20px !important;
   }
 
+  .site-header .brand {
+    margin-inline-end: 2.25rem !important;
+    flex-shrink: 0 !important;
+  }
+
   .navbar-expand-lg .navbar-nav,
   .site-header .navbar-nav {
     display: flex !important;
@@ -781,15 +786,31 @@ html, body {
     margin-right: auto !important;
   }
 
-  .navbar .nav-link {
-    padding: 0.5rem 0.7rem !important;
-    font-size: 0.92rem !important;
+  .site-header .navbar-nav .nav-item {
+    margin: 0 1px !important;
+  }
+
+  .navbar .nav-link,
+  .site-header .navbar-nav .nav-link {
+    padding: 0.45rem 0.55rem !important;
+    font-size: 0.88rem !important;
   }
 
   .site-header .nav-actions {
     display: flex !important;
     align-items: center !important;
-    gap: 0.55rem !important;
+    gap: 0.45rem !important;
+  }
+
+  .site-header .nav-toggles-row .icon-btn {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .site-header .nav-actions .btn {
+    padding: 0.38rem 0.85rem !important;
+    font-size: 0.84rem !important;
+    white-space: nowrap !important;
   }
 
   .dmain {
@@ -818,6 +839,8 @@ html, body {
   .site-header .brand {
     font-size: 1.4rem !important;
     gap: 0.65rem !important;
+    margin-inline-end: 2.5rem !important;
+    flex-shrink: 0 !important;
   }
 
   .site-header .brand .logo-box {
@@ -839,16 +862,21 @@ html, body {
     margin-right: auto !important;
   }
 
-  .navbar .nav-link {
-    padding: 0.55rem 0.95rem !important;
-    font-size: 0.98rem !important;
+  .site-header .navbar-nav .nav-item {
+    margin: 0 2px !important;
+  }
+
+  .navbar .nav-link,
+  .site-header .navbar-nav .nav-link {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.93rem !important;
     font-weight: 600 !important;
   }
 
   .site-header .nav-actions {
     display: flex !important;
     align-items: center !important;
-    gap: 0.75rem !important;
+    gap: 0.6rem !important;
   }
 
   .nav-toggles-row .icon-btn {
@@ -858,8 +886,9 @@ html, body {
   }
 
   .site-header .nav-actions .btn {
-    padding: 0.45rem 1.15rem !important;
-    font-size: 0.92rem !important;
+    padding: 0.42rem 1rem !important;
+    font-size: 0.88rem !important;
+    white-space: nowrap !important;
   }
 
   /* Hero at 1440px */

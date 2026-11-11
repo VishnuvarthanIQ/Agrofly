@@ -855,61 +855,72 @@
   transform: scale(1.05);
 }
 
+.dash-service-card .card-img-wrap::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 54px;
+  background: linear-gradient(to top, rgba(10, 24, 16, 0.55), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .dash-service-card .crop-badge {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  background: rgba(255, 255, 255, 0.96);
+  top: auto;
+  bottom: 10px;
+  inset-inline-start: 10px;
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: #145e35;
-  font-size: 0.78rem;
-  font-weight: 800;
-  padding: 0.3rem 0.8rem;
-  border-radius: 99px;
-  border: 1.5px solid rgba(27, 122, 69, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  letter-spacing: 0.015em;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0.22rem 0.58rem;
+  border-radius: 999px;
+  border: 1px solid rgba(27, 122, 69, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  z-index: 3;
+  letter-spacing: 0.02em;
+  max-width: calc(100% - 104px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 [data-bs-theme="dark"] .dash-service-card .crop-badge {
-  background: rgba(14, 34, 22, 0.96);
+  background: rgba(14, 34, 22, 0.9);
   color: #a6d94b;
-  border: 1.5px solid rgba(166, 217, 75, 0.5);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
-}
-
-[dir="rtl"] .dash-service-card .crop-badge {
-  left: auto;
-  right: 12px;
+  border-color: rgba(166, 217, 75, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .dash-service-card .rate-badge {
   position: absolute;
-  bottom: 12px;
-  right: 12px;
-  background: #ffffff;
-  color: var(--g);
-  font-size: 0.8rem;
+  bottom: 10px;
+  inset-inline-end: 10px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--gd);
+  font-size: 0.68rem;
   font-weight: 800;
-  padding: 0.28rem 0.75rem;
-  border-radius: 99px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-  z-index: 2;
+  line-height: 1.2;
+  padding: 0.22rem 0.58rem;
+  border-radius: 999px;
+  border: 1px solid rgba(27, 122, 69, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  z-index: 3;
+  white-space: nowrap;
 }
 
 [data-bs-theme="dark"] .dash-service-card .rate-badge {
-  background: rgba(14, 34, 22, 0.96);
+  background: rgba(14, 34, 22, 0.9);
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
-}
-
-[dir="rtl"] .dash-service-card .rate-badge {
-  right: auto;
-  left: 12px;
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .dash-service-card .card-body {
@@ -1375,9 +1386,78 @@
 }
 
 [data-bs-theme="dark"] #trackDetails .row > div > div,
-[data-bs-theme="dark"] #trackResultCard .p-3.bg-light {
+[data-bs-theme="dark"] #trackResultCard .p-3.bg-light,
+[data-bs-theme="dark"] .dmain .bg-light:not(.badge),
+[data-bs-theme="dark"] .dcard .bg-light:not(.badge),
+[data-bs-theme="dark"] .modal-content .bg-light:not(.badge) {
   background: rgba(255, 255, 255, 0.04) !important;
   border-color: var(--bd) !important;
+  color: var(--tx) !important;
+}
+
+[data-bs-theme="dark"] .dmain .badge.bg-light {
+  background: rgba(166, 217, 75, 0.12) !important;
+  border-color: rgba(166, 217, 75, 0.28) !important;
+  color: var(--lime) !important;
+}
+
+[data-bs-theme="dark"] .dmain .text-dark:not(.btn):not(.badge):not(.bg-warning):not(.bg-info):not(.bg-light),
+[data-bs-theme="dark"] .modal-content .text-dark:not(.btn):not(.badge):not(.bg-warning):not(.bg-info):not(.bg-light) {
+  color: var(--tx) !important;
+}
+
+[data-bs-theme="dark"] .dmain .btn-outline-warning.text-dark {
+  color: #FCD34D !important;
+  border-color: rgba(251, 191, 36, 0.55) !important;
+}
+
+[data-bs-theme="dark"] .dmain .btn-outline-warning.text-dark:hover,
+[data-bs-theme="dark"] .dmain .btn-outline-warning.text-dark:focus {
+  color: #111827 !important;
+  background-color: #FBBF24 !important;
+  border-color: #FBBF24 !important;
+}
+
+[data-bs-theme="dark"] .dmain .btn-outline-secondary,
+[data-bs-theme="dark"] .modal-content .btn-outline-secondary {
+  color: #CBD5E1 !important;
+  border-color: rgba(203, 213, 225, 0.35) !important;
+}
+
+[data-bs-theme="dark"] .dmain .btn-outline-secondary:hover,
+[data-bs-theme="dark"] .dmain .btn-outline-secondary:focus,
+[data-bs-theme="dark"] .modal-content .btn-outline-secondary:hover,
+[data-bs-theme="dark"] .modal-content .btn-outline-secondary:focus {
+  color: #0F172A !important;
+  background-color: #CBD5E1 !important;
+}
+
+[data-bs-theme="dark"] .dmain .text-success:not(.btn):not(.badge):not(.bg-success-subtle) {
+  color: #4ADE80 !important;
+}
+
+[data-bs-theme="dark"] .dmain .btn-outline-success {
+  color: #4ADE80 !important;
+  border-color: rgba(74, 222, 128, 0.5) !important;
+}
+
+[data-bs-theme="dark"] .dmain .btn-outline-success:hover,
+[data-bs-theme="dark"] .dmain .btn-outline-success:focus {
+  color: #052E16 !important;
+  background-color: #4ADE80 !important;
+}
+
+[data-bs-theme="dark"] .dmain .text-primary {
+  color: #60A5FA !important;
+}
+
+[data-bs-theme="dark"] .dmain .text-danger,
+[data-bs-theme="dark"] .dmain .invalid-feedback {
+  color: #F87171 !important;
+}
+
+[data-bs-theme="dark"] .dmain .text-secondary {
+  color: var(--mu) !important;
 }
 
 /* Stat KPI Cards Uniform Vertical Layout */
@@ -2107,55 +2187,47 @@ body.dash-page {
   }
 }
 
-/* Universal High-Contrast Badge System for Dashboard */
+/* Universal Compact Aligned Badge System for Dashboard Service Cards */
 .dash-service-card .crop-badge,
-.crop-badge {
-  background: #ffffff !important;
-  color: #0b3d1c !important;
-  font-size: 0.8rem !important;
-  font-weight: 800 !important;
-  padding: 0.35rem 0.85rem !important;
-  border-radius: 99px !important;
-  border: 1.5px solid rgba(0, 0, 0, 0.12) !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+.dash-service-card .rate-badge {
+  font-size: 0.68rem !important;
+  line-height: 1.2 !important;
+  padding: 0.22rem 0.58rem !important;
+  border-radius: 999px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16) !important;
   opacity: 1 !important;
   z-index: 3 !important;
 }
 
-[data-bs-theme="dark"] .dash-service-card .crop-badge,
-[data-bs-theme="dark"] .crop-badge {
-  background: #ffffff !important;
-  color: #0b3d1c !important;
-  font-weight: 800 !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7) !important;
-  opacity: 1 !important;
-  z-index: 3 !important;
+.dash-service-card .crop-badge {
+  top: auto !important;
+  bottom: 10px !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  color: #145e35 !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(27, 122, 69, 0.25) !important;
 }
 
-.dash-service-card .rate-badge,
-.rate-badge {
-  background: #ffffff !important;
-  color: #0b3d1c !important;
-  font-size: 0.82rem !important;
-  font-weight: 800 !important;
-  padding: 0.32rem 0.85rem !important;
-  border-radius: 99px !important;
-  border: 1.5px solid rgba(0, 0, 0, 0.12) !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
-  opacity: 1 !important;
-  z-index: 3 !important;
+[data-bs-theme="dark"] .dash-service-card .crop-badge {
+  background: rgba(14, 34, 22, 0.9) !important;
+  color: #a6d94b !important;
+  border-color: rgba(166, 217, 75, 0.4) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
 }
 
-[data-bs-theme="dark"] .dash-service-card .rate-badge,
-[data-bs-theme="dark"] .rate-badge {
-  background: #ffffff !important;
-  color: #0b3d1c !important;
+.dash-service-card .rate-badge {
+  bottom: 10px !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  color: #104d32 !important;
   font-weight: 800 !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7) !important;
-  opacity: 1 !important;
-  z-index: 3 !important;
+  border: 1px solid rgba(27, 122, 69, 0.25) !important;
+}
+
+[data-bs-theme="dark"] .dash-service-card .rate-badge {
+  background: rgba(14, 34, 22, 0.9) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
 }
 
 

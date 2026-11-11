@@ -182,11 +182,11 @@
 
       if (summaryBox) {
         summaryBox.innerHTML = `
-          <div class="sumrow"><span class="text-secondary fw-semibold">Acreage Coverage:</span><strong class="font-monospace text-dark text-end">${rawAcres} ${unit} (${normalizedAcres} Acres)</strong></div>
-          <div class="sumrow"><span class="text-secondary fw-semibold">Base Service Rate:</span><strong class="font-monospace text-dark text-end">${formatINR(ratePerAcre)} / acre</strong></div>
-          <div class="sumrow"><span class="text-secondary fw-semibold">Estimated Subtotal:</span><strong class="font-monospace text-dark text-end">${formatINR(subtotal)}</strong></div>
-          <div class="sumrow"><span class="text-secondary fw-semibold">Agri GST (5%):</span><strong class="font-monospace text-dark text-end">${formatINR(gst)}</strong></div>
-          <div class="sumrow t"><span class="text-dark fw-bold">Total Estimated Cost:</span><strong class="text-agro fs-4 font-monospace text-end">${formatINR(totalAmount)}</strong></div>
+          <div class="sumrow"><span class="text-secondary fw-semibold">Acreage Coverage:</span><strong class="font-monospace text-body text-end">${rawAcres} ${unit} (${normalizedAcres} Acres)</strong></div>
+          <div class="sumrow"><span class="text-secondary fw-semibold">Base Service Rate:</span><strong class="font-monospace text-body text-end">${formatINR(ratePerAcre)} / acre</strong></div>
+          <div class="sumrow"><span class="text-secondary fw-semibold">Estimated Subtotal:</span><strong class="font-monospace text-body text-end">${formatINR(subtotal)}</strong></div>
+          <div class="sumrow"><span class="text-secondary fw-semibold">Agri GST (5%):</span><strong class="font-monospace text-body text-end">${formatINR(gst)}</strong></div>
+          <div class="sumrow t"><span class="text-body fw-bold">Total Estimated Cost:</span><strong class="text-agro fs-4 font-monospace text-end">${formatINR(totalAmount)}</strong></div>
           <hr class="my-2">
           <div class="d-flex justify-content-between small text-muted flex-wrap gap-2">
             <span><i class="bi bi-clock-history me-1 text-agro"></i>Flight Duration: ~${flightMinutes} mins</span>

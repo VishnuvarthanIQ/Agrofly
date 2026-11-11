@@ -2033,6 +2033,34 @@
     };
 
     const details = ARTICLE_EXTRAS[post.id] || ARTICLE_EXTRAS[0];
+    const AUTHOR_PROFILES = {
+      'Arun Prakash': {
+        role: 'Founder & Senior Agronomist',
+        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
+      },
+      'Meena Krishnan': {
+        role: 'Head of Agronomy',
+        avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80'
+      },
+      'Karthik Raja': {
+        role: 'Chief Drone Pilot',
+        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80'
+      },
+      'Divya Lakshmi': {
+        role: 'Operations & Precision Lead',
+        avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80'
+      }
+    };
+    const authorProfile = AUTHOR_PROFILES[post.a] || {
+      role: 'Senior Agronomist',
+      avatar: AUTHOR_PROFILES['Arun Prakash'].avatar
+    };
+    const renderAuthorAvatar = (size, lazy = false) => `
+      <span class="author-avatar-wrap flex-shrink-0" style="width: ${size}px; height: ${size}px;">
+        <img class="author-avatar-img" src="${authorProfile.avatar}" alt="${escapeHTML(post.a)}" width="${size}" height="${size}"${lazy ? ' loading="lazy"' : ''} decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="author-avatar-fallback" aria-hidden="true">${escapeHTML(post.a.charAt(0))}</span>
+      </span>
+    `;
 
     // Build the Rich, Beautiful Editorial Layout
     articleBox.innerHTML = `
@@ -2040,12 +2068,10 @@
         <!-- Article Meta Bar -->
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pb-3 mb-4 border-bottom">
           <div class="d-flex align-items-center gap-3">
-            <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center fw-bold shadow-sm" style="width: 50px; height: 50px; font-size: 1.15rem; background: linear-gradient(135deg, #1b7a45, #104d32) !important;">
-              ${post.a.charAt(0)}
-            </div>
+            ${renderAuthorAvatar(50, false)}
             <div>
-              <div class="fw-bold text-dark fs-6">${escapeHTML(post.a)}</div>
-              <small class="text-muted d-block">Senior Agronomist A AgroFly Precision Farming Desk</small>
+              <div class="fw-bold text-body fs-6">${escapeHTML(post.a)}</div>
+              <small class="text-muted d-block">${escapeHTML(authorProfile.role)} &bull; AgroFly Precision Farming Desk</small>
             </div>
           </div>
           <div class="d-flex align-items-center gap-3 text-muted small">
@@ -2140,12 +2166,10 @@
 
         <!-- Author Bio Card -->
         <div class="article-author-card">
-          <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center fw-bold fs-4 flex-shrink-0 shadow-sm" style="width: 64px; height: 64px; background: linear-gradient(135deg, #1b7a45, #104d32) !important;">
-            ${post.a.charAt(0)}
-          </div>
+          ${renderAuthorAvatar(64, true)}
           <div>
             <h5 class="fw-bold mb-1">${escapeHTML(post.a)}</h5>
-            <p class="text-muted small mb-0">Senior Agronomist at AgroFly. Specialises in precision aerial crop protection, ultra-low volume foliar fertilization, and integrated pest management (IPM) across paddy, cotton, sugarcane, and horticulture ecosystems.</p>
+            <p class="text-muted small mb-0">${escapeHTML(authorProfile.role)} at AgroFly. Specialises in precision aerial crop protection, ultra-low volume foliar fertilization, and integrated pest management (IPM) across paddy, cotton, sugarcane, and horticulture ecosystems.</p>
           </div>
         </div>
 
